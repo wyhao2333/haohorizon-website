@@ -33,6 +33,8 @@ Open **http://127.0.0.1:8091/**. The simple local server does not apply Cloudfla
 
 Create a **new** Worker for this repository; do not replace the Studio 980463 Worker.
 
+On October 9, 2026, `haohorizon.com` was still serving the Studio 980463 page. Check its existing Custom Domain binding before switching. If it is attached to the old Worker, detach **only haohorizon.com** (and its `www` hostname if present) and attach it to the new HaoHorizon Worker. Keep **984063.xyz** on its existing project. The returned HTML identifies the old site, but by itself does not prove which Worker owns the domain; confirm that in the dashboard.
+
 1. Open Cloudflare **Workers & Pages → Create application → Import a repository**.
 2. Select **wyhao2333/haohorizon-website**, branch **main**.
 3. Worker name: **haohorizon-website**. Repository root: `/`.
